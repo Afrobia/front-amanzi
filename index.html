@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanzi</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <header class="topo">
+
+      <div class="logo">
+        <img src="img/logo-amanzi.png" alt="Amanzi logo" />
+      </div>
+
+      <nav>
+        <div class="menu-principal">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#agua">Hidratação</a></li>
+            <li><a href="#clima">Clima</a></li>
+            <li><a href="#calculadora">Calcule</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h2>Conheça o seu site de hidratação!</h2>
+      </div>
+      <img src="img/copo-agua.png" alt="Água" />
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="content">
+        <h2>Sobre</h2>
+        <p>A ideia do projeto Amanzi surgiu durante um bootcamp de desenvolvimento back-end, idealizado por Beatriz Santana. O projeto consiste em um site inovador que calcula a ingestão hídrica ideal para cada indivíduo, levando em consideração o peso, as condições climáticas (umidade relativa do ar e temperatura) do local onde o usuário se encontra, através da integração com a API externa OpenWeather.</p>
+        <p>A palavra Amanzi tem origem na língua Zulu, um idioma africano falado na África do Sul, e significa água. A escolha desse nome reflete a proposta do projeto: cuidar da sua hidratação de forma personalizada e eficiente.</p>
+        <p>Você terá acesso a um cálculo preciso da quantidade de água que seu corpo precisa, levando em conta suas características individuais e o clima do seu ambiente.</p>
+      </div>
+      <img src="img/mulher-bebendo-agua.png" alt="Mulher negra, bebendendo água sentada em um restaurante" />
+    </section>
+
+    <section class="agua" id="agua">
+      <div class="content">
+        <h2>Hidratação</h2>
+        <p>A recomendação diária de ingestão de água para um adulto varia de pessoa para pessoa, mas uma diretriz geral é consumir 35 ml de água por kg de peso corporal. Essa quantidade, no entanto, pode precisar ser ajustada de acordo com diversos fatores, como:
+          <ul>
+            <li>Nível de atividade física: pessoas que praticam exercícios intensos perdem mais líquidos através do suor e, portanto, precisam aumentar a ingestão de água.</li>
+            <li>Condições climáticas: em climas quentes e secos, a transpiração é maior, o que exige uma maior reposição de líquidos.</li>
+            <li>Estado de saúde: algumas condições médicas podem influenciar a necessidade de água do corpo.</li>
+            <li>Idade: idosos podem ter uma menor percepção da sede e, por isso, precisam se lembrar de beber água regularmente.</li>
+          </ul>
+        </p>
+      </div>
+      <img src="img/homem-ewercicio-agua.PNG" alt="Homem fazendo exercício e bebendo água" />
+    </section>
+
+    <section class="clima" id="clima">
+      <div class="content">
+        <h2>Influência do Clima</h2>
+        <p>As condições climáticas têm um papel fundamental na nossa necessidade de água. Em climas quentes, o corpo transpira mais para regular a temperatura corporal, o que aumenta a perda de líquidos. Em climas secos, a umidade do ar é menor, o que também contribui para uma maior evaporação da água do corpo.</p>
+        <p>De acordo com a Organização Mundial da Saúde (OMS), em condições normais, um adulto deve consumir cerca de 2 litros de água por dia. No entanto, em locais de alta temperatura, essa recomendação pode aumentar significativamente, chegando a 4,5 litros ou mais.</p>
+      </div>
+      <img src="img/garrafa-sol.png" alt="garrafa suada com o sol ao fundo"/>
+    </section>
+
+    <section class="calculadora" id="calculadora">
+      <div class="content">
+        <h2>Calcule</h2>
+        <p>
+          Calcule a quantidade de água que você deve ingerir de acordo com o
+          clima
+        </p>
+        <form id="form" action="index.php" method="post">
+          <label for="peso">Peso(kg):</label>
+          <input type="number" id="peso" placeholder="Digite seu peso" />
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" placeholder="Cidade" />
+          <label for="estado">UF:</label>
+          <input
+            type="text"
+            name="estado"
+            placeholder="Digite o UF"
+            length="2"
+          />
+          <button type="submit" class="btn">Calcular</button>
+        </form>
+      </div>
+    </section>
+
+  </body>
+  <script src="js/script.js"></script>
+</html>
